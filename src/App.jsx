@@ -1,4 +1,5 @@
 import meny from "./Meny";
+import MyCard from "./Dish";
 
 function App() {
   return (

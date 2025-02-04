@@ -1,3 +1,5 @@
+import "./Card.css";
+
 const MyCard = (props) => {
   return (
     <div id="card_holder">
