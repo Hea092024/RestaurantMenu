@@ -1,11 +1,11 @@
-import meny from "./Meny"
+import meny from "./Meny";
 
 function App() {
   return (
     <>
-    {meny.map((obj) =>(
-      <myCard {...obj} />
-    ))}
+      {meny.map((obj) => (
+        <MyCard key={obj.id} {...obj} />
+      ))}
     </>
   );
 }
