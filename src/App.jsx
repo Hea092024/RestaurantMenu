@@ -1,4 +1,4 @@
-import meny from "./Menu"
+import meny from "./Meny"
 
 function App() {
   return (
