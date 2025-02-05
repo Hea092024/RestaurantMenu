@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}", // Ensure the content paths are correct
-  ],
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkseagreen: "#8fbc8f",
+        pricegreen: "#3f9f3f", // Custom price green
+      },
+    },
   },
-  plugins: [
-    require("@tailwindcss/typography"), // Add the typography plugin
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
