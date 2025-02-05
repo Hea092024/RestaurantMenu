@@ -2,14 +2,16 @@ import Dish from "./Dish";
 
 function Menu({ menu }) {
   return (
-    <>
-      <h1 id="title">Restaurant Menu</h1>
-      <ul id="menu">
+    <div className="text-center">
+      <h1 className="text-4xl font-extrabold text-white mb-8">
+        Restaurant Menu
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {menu.map((dish) => (
           <Dish key={dish.id} dish={dish} />
         ))}
-      </ul>
-    </>
+      </div>
+    </div>
   );
 }
 
