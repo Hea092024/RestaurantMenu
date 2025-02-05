@@ -1,15 +1,17 @@
 function Dish({ dish }) {
   return (
-    <div style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
-      <h3>{dish.tittel}</h3>
-      <p>
-        <strong>Pris:</strong> {dish.pris}
+    <div className="bg-white shadow-lg rounded-lg p-6 mb-6 max-w-xs mx-auto">
+      <h3 className="text-2xl font-semibold text-gray-800">{dish.tittel}</h3>
+      <p className="text-gray-600 mt-2">
+        <strong className="font-medium">Pris:</strong>
+        <span className="text-pricegreen font-bold">{dish.pris}</span>
       </p>
-      <p>
-        <strong>Ingredienser:</strong> {dish.ingredienser}
+      <p className="text-gray-600">
+        <strong className="font-medium">Ingredienser:</strong>{" "}
+        {dish.ingredienser}
       </p>
-      <p>
-        <strong>Kategori:</strong> {dish.kategori}
+      <p className="text-gray-600">
+        <strong className="font-medium">Kategori:</strong> {dish.kategori}
       </p>
     </div>
   );
