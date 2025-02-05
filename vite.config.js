@@ -5,7 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   base: "/RestaurantMenu/", // Ensure the base is correct
-  build: {
-    assetsDir: "", // This ensures that assets are not nested in a subfolder
-  },
+ 
 });
