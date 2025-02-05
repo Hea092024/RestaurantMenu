@@ -3,15 +3,12 @@ import Dish from "./Dish";
 function Menu({ menu }) {
   return (
     <>
-      {menu.map((dish) => (
-        <Dish
-          key={dish.id}
-          title={dish.tittel}
-          price={dish.pris}
-          ingredients={dish.ingredienser}
-          category={dish.kategori}
-        />
-      ))}
+      <h1 id="title">Meny</h1>
+      <ul id="menu">
+        {menu.map((dish) => (
+          <Dish key={dish.id} dish={dish} />
+        ))}
+      </ul>
     </>
   );
 }
