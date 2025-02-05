@@ -1,6 +1,6 @@
 import "./Card.css";
 
-const MyCard = (props) => {
+const MyMenu = (props) => {
   return (
     <div className="bg-white shadow-lg rounded-lg overflow-hidden p-6 border border-gray-200">
       {/* Title */}
@@ -20,4 +20,5 @@ const MyCard = (props) => {
   );
 };
 
-export default MyCard;
+export default MyMenu;
+

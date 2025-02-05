@@ -1,5 +1,5 @@
 import meny from "./Meny";
-import MyCard from "./Dish";
+import MyMenu from "./Dish";  // Update import
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       {/* Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {meny.map((obj) => (
-          <MyCard key={obj.id} {...obj} />
+          <MyMenu key={obj.id} {...obj} />  // Pass the object as props
         ))}
       </div>
     </div>
