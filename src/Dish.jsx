@@ -1,24 +1,18 @@
-import "./Card.css";
-
-const MyMenu = (props) => {
+function Dish({ dish }) {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden p-6 border border-gray-200">
-      {/* Title */}
-      <h1 className="text-2xl font-semibold text-gray-800 mb-2">
-        {props.tittel}
-      </h1>
-
-      {/* Price */}
-      <p className="text-lg font-medium text-green-600">{props.pris}</p>
-
-      {/* Ingredients */}
-      <p className="text-sm text-gray-600 mt-2">{props.ingredienser}</p>
-
-      {/* Category */}
-      <p className="text-xs text-gray-500 mt-2 italic">{props.kategori}</p>
+    <div style={{ border: "1px solid #ccc", margin: "10px", padding: "10px" }}>
+      <h3>{dish.tittel}</h3>
+      <p>
+        <strong>Pris:</strong> {dish.pris}
+      </p>
+      <p>
+        <strong>Ingredienser:</strong> {dish.ingredienser}
+      </p>
+      <p>
+        <strong>Kategori:</strong> {dish.kategori}
+      </p>
     </div>
   );
-};
+}
 
-export default MyMenu;
-
+export default Dish;
